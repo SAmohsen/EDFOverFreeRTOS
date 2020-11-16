@@ -10,3 +10,8 @@
 <li> (A4) Run-time for each task is constant for that task and does not vary with time.Run-time refers to the time which is taken by a processor to execute the task without interruption.</li>
 <li> (A5) Any non-periodic tasks in the system are special; they are initialization or failurerecovery routines; they displace periodic tasks while they themselves are being run, and do not themselves have hard, critical deadlines.</li>
 </ul>
+
+<h3>Usage:</h3> 
+<li>Replace tasks.c With One Exists in FreeRTOS Kernel path : FreeRTOSv10.4.1\FreeRTOS\Source\</li>
+<li>Replace tasks.h With One Exists in FreeRTOS Kernel path : FreeRTOSv10.4.1\FreeRTOS\Source\include </li>
+<li> Add Configuration variable configUSE_EDF_SCHEDULER and Set It To 1 in the FreeRTOS:h config file.   </li>
